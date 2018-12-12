@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">简单相机</string>
+    <string name="picture_location">"照片位置信息"</string>
+    <string name="capture_timer">"定时拍照"</string>
+    <string name="time_lapse">"延时摄影模式"</string>
+    <string name="drv">"行车记录模式"</string>
+    <string name="show_watermark">"照片水印"</string>
+    <string name="mode_on">"开启"</string>
+    <string name="mode_off">"关闭"</string>
+    <string name="timer_3">3 秒</string>
+    <string name="timer_5">5 秒</string>
+    <string name="timer_10">10 秒</string>
+    <string name="take_picture_succeed">"拍照成功"</string>
+    <string name="take_picture_failed">拍照失败</string>
+    <string name="take_picture_error">无法拍摄</string>
+</resources>

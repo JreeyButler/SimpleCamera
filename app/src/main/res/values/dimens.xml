@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_margin">6dp</dimen>
+    <dimen name="normal_margin">12dp</dimen>
+    <dimen name="large_margin">24dp</dimen>
+    <dimen name="show_picture_size">64dp</dimen>
+    <dimen name="size_record_status">20dp</dimen>
+    <dimen name="size_camera_tool_bar">24dp</dimen>
+    <dimen name="size_tool_margin">20dp</dimen>
+    <dimen name="size_focus">48dp</dimen>
+    <dimen name="size_play_video">48dp</dimen>
+    <dimen name="size_settings_bg_radius">6dp</dimen>
+    <dimen name="size_settings_icon">24dp</dimen>
+    <dimen name="size_camera_settings_width">300dp</dimen>
+    <dimen name="size_camera_settings_height">200dp</dimen>
+</resources>

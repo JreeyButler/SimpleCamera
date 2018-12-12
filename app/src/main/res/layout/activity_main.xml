@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <club.suansuanru.camera.AutoFitTextureView
+            android:id="@+id/camera_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/camera_focus"
+            android:layout_width="@dimen/size_focus"
+            android:layout_height="@dimen/size_focus"
+            android:src="@drawable/ic_no_focus"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/camera_spec_mode"
+            android:layout_width="@dimen/size_focus"
+            android:layout_height="@dimen/size_focus"
+            android:layout_margin="@dimen/large_margin" />
+
+        <LinearLayout
+            android:id="@+id/record_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/normal_margin"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/record_status"
+                android:layout_width="@dimen/size_record_status"
+                android:layout_height="@dimen/size_record_status"
+                android:layout_margin="@dimen/small_margin"
+                android:src="@drawable/ic_recording" />
+
+            <TextView
+                android:id="@+id/record_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_margin" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/camera_settings"
+            android:layout_width="@dimen/size_camera_settings_width"
+            android:layout_height="@dimen/size_camera_settings_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/settings_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_camera_settings"
+                android:overScrollMode="never"
+                android:padding="@dimen/normal_margin" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/camera_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/preview"
+        android:layout_margin="@dimen/small_margin"
+        android:background="@android:color/background_dark">
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="@dimen/size_camera_tool_bar"
+            android:layout_height="@dimen/size_camera_tool_bar"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/size_tool_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:src="@drawable/ic_settings" />
+
+        <ImageView
+            android:id="@+id/flash"
+            android:layout_width="@dimen/size_camera_tool_bar"
+            android:layout_height="@dimen/size_camera_tool_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/small_margin"
+            android:src="@drawable/ic_flash_auto" />
+
+        <ImageView
+            android:id="@+id/switch_camera"
+            android:layout_width="@dimen/size_camera_tool_bar"
+            android:layout_height="@dimen/size_camera_tool_bar"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginEnd="@dimen/size_tool_margin"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:src="@drawable/ic_camera_front" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/camera_tool_bar"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:background="@color/no_capture" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_dark">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="@dimen/show_picture_size"
+            android:layout_height="@dimen/show_picture_size"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/normal_margin" />
+
+        <ImageView
+            android:id="@+id/capture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/normal_margin" />
+
+        <ImageView
+            android:id="@+id/camera_mode"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/normal_margin" />
+    </RelativeLayout>
+</RelativeLayout>

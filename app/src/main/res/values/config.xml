@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="camera_settings_names">
+        <item>@string/picture_location</item>
+        <item>@string/capture_timer</item>
+        <item>@string/time_lapse</item>
+        <item>@string/drv</item>
+        <item>@string/show_watermark</item>
+    </string-array>
+
+</resources>

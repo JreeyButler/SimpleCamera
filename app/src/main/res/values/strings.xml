@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Camera</string>
+
+    <string name="picture_location">Picture location information</string>
+    <string name="capture_timer">Timer</string>
+    <string name="time_lapse">Time-lapse photography mode</string>
+    <string name="drv">Driving recorder mode</string>
+    <string name="show_watermark">Picture showWatermark</string>
+    <string name="take_picture_succeed">Take picture success</string>
+    <string name="take_picture_failed">Take picture fail</string>
+    <string name="mode_on">On</string>
+    <string name="mode_off">Off</string>
+    <string name="timer_3">3s</string>
+    <string name="timer_5">5s</string>
+    <string name="timer_10">10s</string>
+    <string name="take_picture_error">Take picture error</string>
+</resources>
